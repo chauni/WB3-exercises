@@ -1,14 +1,14 @@
 function getSupplier(code) {
-    let position = code.indexOf(":");
+    let colonPos = code.indexOf(":");
 
-    return code.substring(0, position);
+    return code.substring(0, colonPos);
 }
 
 function getProductNumber(code) {
-    let position1 = code.indexOf(":");
-    let position2 = code.indexOf("-");
+    let colonPos = code.indexOf(":");
+    let dashPos = code.indexOf("-");
 
-    return code.substring(position1 + 1, position2)
+    return code.substring(colonPos + 1, dashPos)
 }
 
 function getSize(code) {

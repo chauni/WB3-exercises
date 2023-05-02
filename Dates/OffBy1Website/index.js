@@ -6,10 +6,9 @@ dateBtnEl.onclick = onDateBtnClicked;
 
 function onDateBtnClicked() {
     const inputEl = document.getElementById('dateInput');
-    const userDate = inputEl.value
-    const newDate = new Date(userDate)
+    const userDate = new Date(inputEl.value)
     
     const dateOutputEl = document.getElementById('dateOutput');
-    dateOutputEl.innerHTML = newDate.toString();
+    dateOutputEl.innerHTML = userDate.toString();
 }
 

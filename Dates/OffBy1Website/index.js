@@ -9,6 +9,6 @@ function onDateBtnClicked() {
     const userDate = new Date(inputEl.value)
     
     const dateOutputEl = document.getElementById('dateOutput');
-    dateOutputEl.innerHTML = userDate.toString();
+    dateOutputEl.innerHTML = userDate.toUTCString();
 }
 
